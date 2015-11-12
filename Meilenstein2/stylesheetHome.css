@@ -98,7 +98,26 @@ a{
 #formular{
 	
 	text-align:left;
-	margin-left:10%;
+	height:60%;
+	padding-left:5%;
+	
+}
+
+#formlinks{
+	float:left;
+	width:50%;
+	height:100%;
+	
+	
+	
+	
+}
+
+#formrechts{
+	float:right;
+	width:50%;
+	height:100%;
+	
 	
 }
 
@@ -109,7 +128,7 @@ label{
 	color:black;
 	font-size:16px;
 	float:left;
-	width:20%;
+	width:40%;
 	display:block;
 	
 	
