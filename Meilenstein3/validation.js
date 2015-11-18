@@ -1,23 +1,15 @@
-var firstmistake = false;
-
 
 function validate(){
-		
-	var x=/[a-zA-z]+/;
-
-	compare(document.getElementById("name"),x);
-	/*compare(document.getElementById("vorname"),"/[a-zA-z]+");
-	compare(document.getElementById("verein"),"/[a-zA-z]+");
-	compare(document.getElementById("hcoach"),"/[a-zA-z]+");
-	compare(document.getElementById("acoach"),"/[a-zA-z]+");
-	compare(document.getElementById("number"),"/[a-zA-z]+");
-	compare(document.getElementById("jahr"),"/[a-zA-z]+");
-	*/
-
 	
 
-	if(firstmistake == true){
-	
+	if(compareNumber(document.getElementById("jahr"), 0, 2015)|
+	compareNumber(document.getElementById("number"), 4, 15) |
+	compareLetter(document.getElementById("acoach"),/^[a-zA-Z]+$/)|
+	compareLetter(document.getElementById("hcoach"),/^[a-zA-Z]+$/)|
+	compareLetter(document.getElementById("verein"),/^[a-zA-Z]+$/)|
+	compareLetter(document.getElementById("name"),/^[a-zA-Z]+$/)|
+	compareLetter(document.getElementById("vorname"),/^[a-zA-Z]+$/)==true){
+
 	window.alert("Einige Eingaben sind fehlerhaft.\nBitte überprüfen Sie ihre Eingaben");
 	return false;
 
@@ -27,23 +19,28 @@ function validate(){
 	}
 		
 }
+function compareNumber(inputobject, lowerbound, upperbound){
+	if(inputobject.value >= lowerbound && inputobject.value <= upperbound){
+		inputobject.style.border = "none";
+		return false;	
+	} else {
+		inputobject.style.border = "3px solid red";
+		inputobject.focus();
+		return true;
+	}
+} 
 
 
-function compare(inputobject,regex){
+function compareLetter(inputobject,regex){
 	
 	
-	if(inputobject.value.match(regex) == false){
-		inputobject.style.border = "red";
-		window.alert("test");
-	
-		if(firstmistake == false){
-			window.alert("test");
-			inputobject.focus();
-			firstmistake = true;
-			}
-		return 0;
+	if(inputobject.value.search(regex) == -1){
+		inputobject.style.border = "3px solid red";
+		inputobject.focus();
+	return true;
 	}else{
-		return 0;
+		inputobject.style.border = "none";
+		return false;
 	}
 	
 }

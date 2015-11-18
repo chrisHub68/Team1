@@ -15,7 +15,7 @@
 	
 	<h1>Spieler anlegen</h1><br/><br/>
 
-	<form  onclick= "return validate()" action="http://martinakraus.net/createPlayer.php" id = "formular">
+	<form  action="http://martinakraus.net/createPlayer.php" onsubmit="return validate()" id = "formular">
 	
 		<div id= "formlinks">
 	
@@ -54,7 +54,7 @@
 			<input type="checkbox" name="aktiv" value="Ja" id ="aktiv">Ja
 			<input type="checkbox" name="aktiv" value="Nein" checked="checked">Nein<br/><br/>
 	
-		<input type="submit" value="Absenden">
+		<input id="submit"  type="submit" value="Absenden">
 	
 		</div>
 		
