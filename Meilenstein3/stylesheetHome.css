@@ -1,0 +1,136 @@
+
+html{
+	
+	height:100%;
+}
+
+body{
+	background-color: rgb(0,162,233) ;
+	margin:0px auto;
+	height:100%;
+	
+	
+	
+}
+
+#basketball{
+	
+	width:30%;
+	height:30%;
+	
+}
+
+#top{
+	
+	font-size:22px;
+	margin-top:0px;
+	
+}
+
+
+#top2{
+	
+	font-size:24px;
+	margin-top:0px;
+	background-color: rgb(75,47,37) ;
+	
+}
+
+#letter{
+	
+	color:rgb(136,0,21);
+	
+}
+
+#main{
+	
+	height:100%;
+	text-align:center;
+	background-color: rgb(153,217,234) ;
+	margin-left:20%;
+	margin-right:20%;
+
+	
+
+	
+}
+
+#menue{
+	
+	border-style: solid;
+    border-width: 2px;
+	border-color: rgb(63,72,204);
+	
+	width:120px;
+	height:90px;
+	
+	margin-left:auto;
+	margin-right:auto;
+
+
+	
+}
+
+a{
+	color:black;
+	text-decoration:none;
+	
+}
+
+
+#menuepunkte:hover { 
+    background-color:rgb(63,72,204);
+}
+
+
+#menuepunkte{
+	
+	
+	background-color:rgb(0,162,232);
+	font-size:18px;
+	width:120px;
+	height:30px;
+	line-height:30px;
+	
+}
+
+
+#formular{
+	
+	text-align:left;
+	height:60%;
+	padding-left:5%;
+	
+}
+
+#formlinks{
+	float:left;
+	width:50%;
+	height:100%;
+	
+	
+	
+	
+}
+
+#formrechts{
+	float:right;
+	width:50%;
+	height:100%;
+	
+	
+}
+
+
+
+label{
+	
+	color:black;
+	font-size:16px;
+	float:left;
+	width:40%;
+	display:block;
+	
+	
+	
+}

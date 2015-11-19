@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>       
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="stylesheetFavoriten.css">
+		<script language="javascript" type="text/javascript" src="loadTable.js"></script>
+		<title>Meine Spieler</title>
+	</head>
+	<body>
+	
+	<div id="main">
+	
+	<input type="button" value="Back" onclick="window.history.back()" /> 
+
+	<h1>Meine Spieler</h1>
+	
+	<table id="spielerMenue">
+	<tr> 
+		 <th id="alleSpieler" onclick="loadAllPlayers()">Alle Spieler</th> 
+		 <th id="meineFavoriten" onclick="loadFavorites()">Meine Favoriten</th> 
+	</tr>
+	</table>
+	
+	<table id="meineSpieler">
+	<tr>
+		<th>Spieler</th>
+		<th>Verein</th>
+		<th>Headcoach</th>
+		<th>Assistant</th>
+		<th>Position</th>
+		<th>Aktiv</th>
+		<th>Nummer</th>
+		<th>Jahr</th>
+	
+	</table>
+	
+	
+	
+	</div>
+	</body>
+		
+</html>
