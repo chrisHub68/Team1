@@ -27,7 +27,12 @@ body{
 	table-layout:fixed;
 }
 
-#meineSpieler{
+#spielerMenue th {
+    border: 1px solid black;
+	cursor: pointer;
+}
+
+#spielerDaten{
 	text-align:left;
 	margin-left:auto;
 	margin-right:auto;
@@ -35,10 +40,30 @@ body{
 	border-collapse:collapse;
 	table-layout:fixed;
 }
-#meineSpieler th{
+#spielerDaten th{
 	border: 1px solid black;
 }
 
-#spielerMenue th {
-    border: 1px solid black;
+#spielerDaten td{
+	border: 1px solid black;
 }
+
+#spieler{
+	text-align:left;
+	margin-left:auto;
+	margin-right:auto;
+	width:97%;
+	border-collapse:collapse;
+	table-layout:fixed;
+}
+#spieler th{
+	border: 1px solid black;
+}
+
+#spieler td{
+	border: 1px solid black;
+}
+
+
+
+
