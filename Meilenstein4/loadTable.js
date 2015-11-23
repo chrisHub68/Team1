@@ -1,4 +1,3 @@
-
 var arrayPlayers = [];
 var arrayFavorites = [];
 
@@ -24,7 +23,6 @@ function loadFavorites(){
 	document.getElementById("meineFavoriten").style.backgroundColor = "rgb(0,38,255)"; 	
 	document.getElementById("meineFavoriten").style.color= "#FFFFFF";
 	
-	loadArrayFavorites();
 	loadTable(arrayFavorites);
 	
 }
@@ -61,12 +59,17 @@ function loadTable(loadthis){
 		cell7 = row.insertCell(6);
 		cell8 = row.insertCell(7);
 
-		cell1.innerHTML = loadthis[i].firstname + loadthis[i].surname	;
+		cell1.innerHTML = loadthis[i].firstname + " " + loadthis[i].surname	;
 		cell2.innerHTML = loadthis[i].team;
 		cell3.innerHTML = loadthis[i].headcoach;
 		cell4.innerHTML = loadthis[i].asisstantcoach;
 		cell5.innerHTML = loadthis[i].position;
-		cell6.innerHTML = loadthis[i].isActive;
+		
+		if(loadthis[i].isActive){
+			cell6.innerHTML = "ja";
+		}else{
+			cell6.innerHTML = "nein";
+		}
 		cell7.innerHTML = loadthis[i].number;
 		cell8.innerHTML = loadthis[i].year;
 	}
@@ -91,6 +94,7 @@ function loadJSON(){
 		if (xml.readyState == 4 && xml.status == 200) {
 			arrayPlayers = JSON.parse(xml.responseText);
 			loadAllPlayers();
+			loadArrayFavorites();
 		}
 	};
 	
