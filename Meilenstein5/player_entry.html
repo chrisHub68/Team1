@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="stylesheetHome.css">
+		<script language="javascript" type="text/javascript" src="validation.js"></script>
+		<title>Spieler anlegen</title>
+	</head>
+	
+	<body>
+	
+	<div id="main">
+	
+	<br/>
+	
+	<h1>Spieler anlegen</h1><br/><br/>
+
+	<form method="POST" action="http://localhost:8080/" onsubmit="return validate()" id = "formular">
+	
+		<div id= "formlinks">
+	
+		<label for="vorname">Vorname</label>
+			<input type="text" name="vorname" id ="vorname"><br/><br/>
+	
+		<label for="name">Nachname</label>
+			<input type="text" name="name" id ="name"><br/><br/>
+	
+		<label for="verein">Verein</label>
+			<input type="text" name="verein" id ="verein"><br/><br/>
+	
+		<label for="hcoach">Headcoach</label>
+			<input type="text" name="hcoach" id ="hcoach"><br/><br/>
+	
+		<label for="acoach">Assistant Coach</label>
+			<input type="text" name="acoach" id ="acoach"><br/><br/>
+	
+		<label for="position">Position</label>
+		
+			<select name ="position" size="1" id ="position">
+				<option value="Center">Center</option>
+				<option value="Guard">Guard</option>
+				<option value="Power Forward">Power Forward</option>
+				<option value="Wing" selected="selected">Wing</option>
+				<option value="Small Forward">Small Forward</option>
+			</select><br/><br/>
+	
+		<label for="number">Rückenummer</label>
+			<input type="number" name="number" id ="number"><br/><br/>
+	
+		<label for="jahr">Geburtsjahr</label>
+			<input type="number" name="jahr" id ="jahr"><br/><br/>
+			
+		<label for="aktiv">Aktiv</label>
+			<input type="checkbox" name="aktiv" value="Ja" id ="aktiv">Ja
+			<input type="checkbox" name="aktiv" value="Nein" checked="checked">Nein<br/><br/>
+	
+		<input id="submit"  type="submit" value="Absenden">
+	
+		</div>
+		
+		<div id="formrechts">
+		
+		<label id="favo" for="favorit">Als Favorit markieren</label>
+			<input type="checkbox" name="favorit" value="Ja" id ="favorit"><br/><br/>
+	
+		</div>
+		
+			
+		
+	
+	</form>
+	
+	<div id="back" >
+	<input type="button" value="Back" onclick="window.history.back()" />
+	</div>
+	
+	</div>
+
+	</body>
+
+</html>
