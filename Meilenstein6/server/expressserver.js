@@ -16,7 +16,7 @@ app.get('/Favorites' , function(request, response){
 });
 
 app.get('/AllPlayers' , function(request, response){
-	response.json(JSON.parse(fs.readFileSync("data.json")));
+	response.json(JSON.parse(fs.readFileSync("../json/data.json")));
 });
 
 app.put('/Player', function(request,response){	
@@ -25,7 +25,7 @@ app.put('/Player', function(request,response){
 });
 
 function filterFavorites(){
-	var json = JSON.parse(fs.readFileSync("data.json"));
+	var json = JSON.parse(fs.readFileSync("../json/data.json"));
 	var favorites = [];
 	var pos = 0;
 	
@@ -49,5 +49,5 @@ function appendPlayer(player){
 	string += player.position + " ,";
 	string += player.number;
 	
-	fs.appendFile("form.txt.txt" , string + "\r\n");	
+	fs.appendFile("../text/form.txt.txt" , string + "\r\n");	
 }

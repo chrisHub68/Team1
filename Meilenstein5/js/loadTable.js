@@ -98,6 +98,6 @@ function loadJSON(){
 		}
 	};
 	
-	xml.open("GET", "data.json" , true);
+	xml.open("GET", "../json/data.json" , true);
     xml.send();		
 }

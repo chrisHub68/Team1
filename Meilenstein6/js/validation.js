@@ -54,9 +54,6 @@ function putValues(){
     "team": document.getElementById("verein").value ,
     "position": document.getElementById("position").value ,
 	};
-	console.log(object);
-	console.log(JSON.stringify(object));
-	
 /*
 	var xmlhttp = new XMLHttpRequest();
 	xmlhttp.open("PUT", "http://localhost:80/Player");

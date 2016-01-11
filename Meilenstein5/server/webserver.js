@@ -1,9 +1,8 @@
 var http = require('http');
 var fs = require('fs');
 var port = 80;
-var ip = '141.19.156.119';
 var server = http.createServer(handler);
-server.listen(port, ip);
+server.listen(port);
 
 
 function writeForm(formBody){
@@ -20,7 +19,7 @@ function writeForm(formBody){
 	string += ', ' + writeValue(playerData,"position");
 	string += ', ' + writeValue(playerData,"number");
 
-	fs.appendFile('form.txt.txt', string + '\r\n');
+	fs.appendFile('../text/form.txt.txt', string + '\r\n');
 }
  
 function writeValue(playerData,pattern){
@@ -37,7 +36,7 @@ function handler(request,response){
 	
 	console.log('<User connected to server>');
 	response.writeHead(200, {'Content-Type':'text/plain'});
-	response.end('Sie haben sich erfolgreich auf den WebServer mit der Url <' + port + ':' + ip + '> verbunden');
+	response.end('Sie haben sich erfolgreich auf den WebServer mit der Url <' + port + '> verbunden');
 	
 	var playerData = "";
 	request.on('data', function (formBody) {

@@ -7,3 +7,7 @@ hey hey ,8 ,geht ,digger ,Wing ,8
 hey hey ,8 ,geht ,digger ,Wing ,8
 hey hey ,8 ,geht ,digger ,Wing ,8
 hey hey ,8 ,geht ,digger ,Wing ,8
+Hallo Was ,10 ,Ab ,digger ,Wing ,8
+Hallo Was ,10 ,Ab ,digger ,Wing ,8
+Hallo Was ,10 ,Ab ,digger ,Wing ,8
+Tschüss Was ,10 ,Ab ,digger ,Wing ,8
