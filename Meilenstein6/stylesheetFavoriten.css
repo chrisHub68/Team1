@@ -1,0 +1,87 @@
+html{
+	height:100%;
+	font-family: arial;
+}
+
+body{
+	background-color: rgb(0,162,233) ;
+	margin:0px auto;
+	height:100%;
+}
+
+#main{
+
+	height:100%;
+	text-align:center;
+	background-color: rgb(153,217,234) ;
+	margin-left:20%;
+	margin-right:20%;
+
+}
+
+#spielerMenue{
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+    width:97%;
+	border-collapse:collapse;
+	table-layout:fixed;
+}
+
+#spielerMenue th {
+    border: 1px solid black;
+	cursor: pointer;
+	font-size: 20px;
+}
+
+h1{
+	font-size: 24px;
+	color: rgb(75,47,37);
+	margin:0; 
+	
+}
+
+#back{
+	float:right;
+	margin-right:5%;
+	
+}
+
+#spielerDaten{
+	text-align:left;
+	font-size: 14px;
+	margin-left:auto;
+	margin-right:auto;
+	width:97%;
+	border-collapse:collapse;
+	table-layout:fixed;
+}
+
+
+
+th{
+	border: 1px solid black;
+	overflow:hidden;
+	
+}
+
+td{
+	border: 1px solid black;
+	overflow:hidden;
+	padding-left: 1%;
+}
+
+#spieler{
+	font-size: 12px;
+	text-align:left;
+	margin-left:auto;
+	margin-right:auto;
+	width:97%;
+	border-collapse:collapse;
+	table-layout:fixed;
+}
+
+
+
+
+
